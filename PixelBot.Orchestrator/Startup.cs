@@ -36,9 +36,11 @@ namespace PixelBot.Orchestrator
 			services.AddMvc()
 					.AddNewtonsoftJson();
 
+			/*
 			services.AddControllers();
 
 			services.AddServerSideBlazor();
+			*/
 
 			services.Configure<BotConfiguration>(Configuration.GetSection("BotConfig"));
 
@@ -67,6 +69,7 @@ namespace PixelBot.Orchestrator
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
+			/*
 
 			app.UseRouting();
 
@@ -80,6 +83,9 @@ namespace PixelBot.Orchestrator
 				routes.MapBlazorHub();
 				routes.MapFallbackToPage("/Index");
 			});
+			*/
 		}
 	}
 }
+
+class MainLayout { }

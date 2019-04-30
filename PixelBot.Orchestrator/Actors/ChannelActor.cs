@@ -70,12 +70,14 @@ namespace PixelBot.Orchestrator.Actors
 
 			StartEventHandlerActors();
 
+			/*
 			_Client.OnNewSubscriber += (o, args) => NewSub.Forward(args);
 			_Client.OnReSubscriber += (o, args) => ReSub.Forward(args);
 			_Client.OnGiftedSubscription += (o, args) => GiftSub.Forward(args);
 			_Client.OnRaidNotification += (o, args) => Raid.Forward(args);
 			_Client.OnChatCommandReceived += (o, args) => ChatCommand.Forward(args);
 			_Client.OnMessageReceived += (o, args) => NewMessage.Forward(args);
+			*/
 
 			_Client.Connect();
 
